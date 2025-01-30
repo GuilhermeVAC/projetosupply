@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+#movimentacoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#movimentacoes-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#movimentacoes-list li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#error-message {
+    margin-top: 20px;
+    text-align: center;
+}
+
