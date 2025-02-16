@@ -10,7 +10,7 @@ db_config = {
     "host": "localhost",
     "user": "root",
     "password": "<2010.guicae",  # Substitua pela sua senha
-    "database": "movimentacao"
+    "database": "projetosupply"
 }
 
 # Conexão com o banco de dados
@@ -67,9 +67,9 @@ def get_movimentacoes():
             estado_sensor = row[1]
             # Converter 1 para "Ativado" e outros valores para "Desativado"
             if estado_sensor == 1:
-                estado_sensor = "Parado"
+                estado_sensor = "Movimentado"
             else:
-                estado_sensor = "Movimentado"  # Ou outro valor dependendo do seu caso
+                estado_sensor = "Parado"  # Ou outro valor dependendo do seu caso
 
             movimentacoes.append({
                 'posicao_movimentada': row[0],
